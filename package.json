@@ -2,12 +2,14 @@
   "name": "panorama-viewer",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview --port 4173",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@headlessui/vue": "^1.6.4",
+    "@heroicons/vue": "^1.0.6",
     "photo-sphere-viewer": "^4.6.3",
     "vue": "^3.2.36"
   },

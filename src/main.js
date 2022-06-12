@@ -1,6 +1,7 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-import "./index.css";
+import "photo-sphere-viewer/dist/plugins/markers.css";
+import "./assets/scss/global.scss";
 
 const app = createApp(App);
 

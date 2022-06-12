@@ -5,7 +5,6 @@
 <script>
 import { Viewer } from "photo-sphere-viewer";
 import { MarkersPlugin } from "photo-sphere-viewer/dist/plugins/markers";
-import "photo-sphere-viewer/dist/plugins/markers.css";
 import PanoramaImg from "@/assets/img/panorama.jpg";
 import PinRed from "@/assets/img/pin-red.png";
 import PinYellow from "@/assets/img/pin-yellow.png";
@@ -153,7 +152,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #viewer {
   width: 100vw;
   height: 100vh;
