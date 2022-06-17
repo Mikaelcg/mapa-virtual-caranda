@@ -1,6 +1,9 @@
 @tailwind base;
-@tailwind components;
 @tailwind utilities;
+
+@import url('primevue/resources/themes/bootstrap4-dark-blue/theme.css');
+@import url('primevue/resources/primevue.min.css');
+@import url('primeicons/primeicons.css  ');
 
 body{
   margin: 0px;
