@@ -1,10 +1,10 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-import PrimeVue from "primevue/config";
+import vuetify from "./plugins/vuetify";
+import { loadFonts } from "./plugins/webfontloader";
 import "photo-sphere-viewer/dist/plugins/markers.css";
 import "./assets/scss/global.scss";
 
-const app = createApp(App);
+loadFonts();
 
-app.use(PrimeVue);
-app.mount("#app");
+createApp(App).use(vuetify).mount("#app");
