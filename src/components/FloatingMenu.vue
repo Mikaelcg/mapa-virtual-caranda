@@ -14,6 +14,7 @@
             icon="mdi-highway"
             variant="outlined"
             color="#B62134"
+            @click="removeMarkers('acessos')"
           >
           </v-btn>
         </template>
@@ -56,7 +57,11 @@ export default {
   },
   computed: {},
   created() {},
-  methods: {},
+  methods: {
+    removeMarkers(categoria) {
+      this.$emit("removeMarker", categoria);
+    },
+  },
 };
 </script>
 

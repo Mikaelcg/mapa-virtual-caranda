@@ -1,5 +1,5 @@
 <template>
-  <FloatingMenu />
+  <FloatingMenu @removeMarker="removeMarker" />
   <PanoramaViewer />
 </template>
 
