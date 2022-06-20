@@ -60,10 +60,6 @@ export default {
         .filter((marker) => marker.active)
         .map((marker) => marker.category);
 
-      console.log(categories);
-      console.log(markers);
-      console.log(buttons);
-
       this.markers.forEach((marker) => {
         const isActive = categories.includes(marker.data.category);
 

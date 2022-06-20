@@ -2,6 +2,8 @@ import PinRed from "@/assets/img/pin-red.png";
 import PinYellow from "@/assets/img/pin-yellow.png";
 import PinGreen from "@/assets/img/pin-green.png";
 import PinBrown from "@/assets/img/pin-brown.png";
+import PinOrange from "@/assets/img/pin-orange.png";
+import PinGrey from "@/assets/img/pin-grey.png";
 
 const getMarkerHtml = (description, color = "red") => {
   let pin = PinRed;
@@ -15,6 +17,12 @@ const getMarkerHtml = (description, color = "red") => {
       break;
     case "brown":
       pin = PinBrown;
+      break;
+    case "orange":
+      pin = PinOrange;
+      break;
+    case "grey":
+      pin = PinGrey;
       break;
     default:
       break;
@@ -37,7 +45,40 @@ export default [
     html: getMarkerHtml("Cinemateca", "brown"),
     tooltip: "3 minutos",
     data: {
-      categoria: "museus",
+      category: "museus",
+    },
+  },
+  {
+    id: "pizzariaQuintalBraz",
+    longitude: 0.49,
+    latitude: -0.205,
+    anchor: "center center",
+    html: getMarkerHtml("Pizzaria Quintal do Braz", "orange"),
+    tooltip: "4 minutos",
+    data: {
+      category: "restaurantes-padarias",
+    },
+  },
+  {
+    id: "avenidaSennaMadureira",
+    longitude: -0.15,
+    latitude: -0.56,
+    anchor: "center center",
+    html: getMarkerHtml("Av. Senna Madureira", "grey"),
+    tooltip: "",
+    data: {
+      category: "acessos",
+    },
+  },
+  {
+    id: "farmaLife",
+    longitude: -0.4,
+    latitude: -0.38,
+    anchor: "center center",
+    html: getMarkerHtml("FarmaLife"),
+    tooltip: "",
+    data: {
+      category: "saude",
     },
   },
   // {
