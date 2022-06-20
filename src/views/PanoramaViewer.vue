@@ -3,12 +3,12 @@
 </template>
 
 <script>
-import { Viewer } from "photo-sphere-viewer";
-import { MarkersPlugin } from "photo-sphere-viewer/dist/plugins/markers";
 import PanoramaImg from "@/assets/img/panorama.jpg";
 import PinRed from "@/assets/img/pin-red.png";
 import PinYellow from "@/assets/img/pin-yellow.png";
 import PinGreen from "@/assets/img/pin-green.png";
+import { Viewer } from "photo-sphere-viewer";
+import { MarkersPlugin } from "photo-sphere-viewer/dist/plugins/markers";
 
 export default {
   name: "PanoramaViewer",
@@ -24,6 +24,7 @@ export default {
   mounted() {
     const viewer = new Viewer({
       container: document.querySelector("#viewer"),
+      panorama: PanoramaImg,
       plugins: [
         [
           MarkersPlugin,
@@ -113,9 +114,9 @@ export default {
           },
         ],
       ],
-      panorama: PanoramaImg,
-      caption: "Panorama Viewer",
-      description: "This is a panorama viewer.",
+
+      caption: "Mapa Virtual",
+      description: "Mapa Virtual - Caranda.",
     });
 
     if (!viewer) {
