@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
+    "mitt": "^3.0.0",
     "photo-sphere-viewer": "^4.6.3",
     "roboto-fontface": "*",
     "vue": "^3.2.36",
