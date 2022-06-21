@@ -30,7 +30,7 @@ const getMarkerHtml = (description, color = "red") => {
 
   return `
         <div class="flex flex-col items-center">
-          <span class='description text-[#fff]'>${description}</span>
+          <span class='marker-description text-[#fff]'>${description}</span>
           <img src='${pin}' width='38' />
         </div>
       `;

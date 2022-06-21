@@ -28,6 +28,17 @@ export default {
       this.viewer = new Viewer({
         container: document.querySelector("#viewer"),
         panorama: PanoramaImg,
+        loadingTxt: "Carregando...",
+        touchmoveTwoFingers: true,
+        navbar: [
+          "autorotate",
+          "zoom",
+          "move",
+          "description",
+          "markersList",
+          "caption",
+          "fullscreen",
+        ],
         plugins: [
           [
             MarkersPlugin,
@@ -36,7 +47,7 @@ export default {
             },
           ],
         ],
-        caption: "Mapa Virtual",
+        caption: "Mapa Virtual - <b>Caranda</b>",
         description: "Mapa Virtual - Caranda.",
       });
 
